@@ -1,19 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viwport" content="width=device-width, inicial-scale=1">
-        
-        <title>Escola de Programadores</title>
+        <meta name="description" content="portifólio aprendiz Maikel Wehn">
+        <meta name="keyword" content="Programadore,html,css,">
+        <meta name="author" content="Maikel Wehn">
+        <link rel="icon" type="image/x-icon" href="img/logo7.ico">
+        <title>Wehn Programação</title>
 
+        <style>
+            body{
+                margin: 0;
+                background-color: black;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                
+            }
+            
+            header{
+                background-color: black;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 7px solid gray;
+            }
+           nav{
+                text-align: right;
+           }
+
+            a{
+                display: inline-flex;
+                align-items: center;
+                color:aliceblue;
+                font-size: 20px;
+                margin: 30px;
+            }
+            
+            p{ 
+                color: rgb(2, 105, 2);
+                font-family: monospace;
+                font-size: 15px;
+                border-right: 4px solid;
+                width: 163ch;
+                white-space: nowrap;
+                overflow: hidden;
+                animation: digitando 30s steps(163),
+                piscar 0.5s infinite step-end alternate; 
+            }
+
+            @keyframes digitando{
+                from{
+                    width: 0;
+
+                }
+            }
+
+            @keyframes piscar{
+                50%{borde-rcolor: tranparent}
+            }
+
+            footer{
+                background-color: black;
+                display: flex;
+                justify-content: space-evenly;
+                border-top: 5px solid gray;
+                margin-top:auto;
+            }
+
+            .lik{
+                display: inline-flex;
+                align-items: center;
+                color:aliceblue;
+                font-size: 20px;
+                margin: 10px;
+
+            }
+        </style>
     </head>
     <body>
-        <section>
-            <div>
-                <img src="img/"
-            </div>
-        </section>
-    
-    </body>
+        <header>
+                <img width=275px height="75px" src="img/logo-grande2.webp" alt="logo marca consiste no nome wehn em letras grandes ao lado de um monitor de video de computador ">  
+                 <nav>
+                    <a href="https://www.youtube.com/watch?v=Uluw3YtDHjM">Skils</a>
+                    <a href="">Sobre</a>
+                    <a href="https://www.youtube.com/watch?v=Q3YX0_M23PA">Projetos</a>
+                    <a href="">Contatos</a>
+                    <a href="https://www.youtube.com/watch?v=7z9RMd-FH4Y">Download</a>
+                 </nav>       
+        </header>
+        
+        <p>Olá... Me chamo Maikel serei seu guia em meu site....Caso queira ver meu curriculum....Clique em Download.....Caso queira entrar em contato.....Clique em Contatos.</p>
+    <footer>
+            <a class='lik'href="">facebook</a>
+            <a class='lik'href="">Guithub</a>
+            <a class='lik'href="">Linkedin</a>
+        
+    </footer>
+</body>
 
 </html>
