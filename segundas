@@ -1,0 +1,31 @@
+body>
+    <script>
+        // Função para obter o nome da pessoa (pode ser obtido de cookies, sessão, etc.)
+        function obterNome() {
+            // Neste exemplo, estamos usando um valor fixo. 
+            // Você pode substituir isso com a lógica para obter o nome do usuário.
+            return "Maikel";
+        }
+
+        // Função para exibir a saudação
+        function exibirSaudacao() {
+            var nome = obterNome();
+            var saudacao = '<p>Olá "' + nome + '"</p>' +
+                           '<p>Me chamo Maikel, serei seu guia em meu site...</p>' +
+                           '<p>Caso queira ver meu curriculum, clique em <a href="caminho-para-o-curriculum" download>Download</a>.</p>' +
+                           '<p>Caso queira entrar em contato, clique em <a href="caminho-para-contatos">Contatos</a>.</p>';
+
+            // Inserir a saudação no elemento com o id "saudacao"
+            document.getElementById("saudacao").innerHTML = saudacao;
+        }
+
+        // Chamar a função quando a página carregar
+        window.onload = exibirSaudacao;
+    </script>
+
+    <!-- Onde você quer exibir a saudação -->
+    <div id="saudacao"></div>
+
+    <!-- Restante do conteúdo da sua página -->
+    <!-- ... -->
+</body>

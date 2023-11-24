@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viwport" content="width=device-width, inicial-scale=1">
+        <meta name="description" content="portifólio aprendiz Maikel Wehn">
+        <meta name="keyword" content="Programadore,html,css,">
+        <meta name="author" content="Maikel Wehn">
+        <link rel="icon" type="image/x-icon" href="img/logo7.ico">
+        <title>treino</title>
+    </head>
+    <style>
+    p{ 
+        color: rgb(2, 105, 2);
+        font-family: monospace;
+        font-size: 15px;
+        border-right: 4px solid;
+        width: 163ch;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: digitando 30s steps(163),
+        piscar 0.5s infinite step-end alternate; 
+    }
+
+    @keyframes digitando{
+        from{
+            width: 0;
+
+        }
+    }
+
+    @keyframes piscar{
+        50%{borde-rcolor: tranparent}
+    }
+
+    footer{
+        background-color: black;
+        display: flex;
+        justify-content: space-evenly;
+        border-top: 5px solid gray;
+        margin-top:auto;
+    }
+    </style>
+    <body>
+        <p>Olá... Me chamo Maikel serei seu guia em meu site....Caso queira ver meu curriculum....Clique em Download.....Caso queira entrar em contato.....Clique em Contatos.</p>
+    </body>
+    
+
+</html>        
